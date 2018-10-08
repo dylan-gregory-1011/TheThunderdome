@@ -45,7 +45,8 @@ class Fighter(object):
 
     def useMove(self, move_ix):
         """
-        Calculates the proper health response from an attack that the user makes
+        Calculates the proper health response from an attack that the user makes.  The attack
+        options are mentioned at the header to this script and determine the effectiveness.
         """
         if move_ix == 2:
             self.health += (min([randint(15,20), 100 - self.health]))
